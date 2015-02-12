@@ -15,7 +15,7 @@ namespace LambdaPractice
 
 
             //declare a variable kayakProducts and set it equal to all products that contain the word "Kayak"
-            List<string> kayakProducts = products.Where(x => products.Contains("Kayak")).ToList();
+            List<string> kayakProducts = products.Where(x => x.Contains("Kayak")).ToList();
 
             //print the kayakProducts to the console using a foreach loop.
             foreach (string item in kayakProducts)
